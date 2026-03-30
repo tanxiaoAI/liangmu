@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { MessageSquare, Search, Filter, MessageCircle, Heart, Share2, Send, Bot, CheckCircle, Clock, MoreHorizontal } from 'lucide-react'
+import { MessageSquare, Search, Filter, MessageCircle, Heart, Share2, Send, Bot, CheckCircle, Clock, MoreHorizontal, Loader2 } from 'lucide-react'
 
 interface Lead {
   id: string

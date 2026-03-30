@@ -107,7 +107,7 @@ router.post('/logout', async (req: Request, res: Response): Promise<void> => {
   const token = req.headers.authorization?.split(' ')[1]
 
   if (token) {
-    await supabase.auth.signOut(token)
+    await supabase.auth.signOut({ scope: 'global' })
   }
 
   res.status(200).json({
